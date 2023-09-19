@@ -1,0 +1,48 @@
+.disable-select {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.meassureRect {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  z-index: 100;
+}
+
+.mrToolTip,
+.mrHorizontal,
+.mrVertical {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.mrHorizontal,
+.mrVertical {
+  mix-blend-mode: difference;
+}
+
+.mrHorizontal {
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
+.mrVertical {
+  border-left: 1px solid white;
+  height: 100%;
+}
+
+.mrToolTip {
+  outline: 1px solid white;
+  background: rgba(0, 100, 0, 0.719);
+  color: white;
+  white-space: nowrap;
+  visibility: hidden;
+  padding: 3px;
+  border-radius: 3px;
+}
